@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <title>Inversarea unei matrice</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+ #pozameniu{
+
+background-image: url("img/pozabara.jpg");
+  background-repeat: repeat-x;
+}
+	p{
+	font-family:Verdana;
+	}
+	h3{
+		font-family:Verdana;
+		align:center;
+		color:lightblue;
+	}
+	a:hover {
+		color: purple;
+		background-color: transparent;
+		text-decoration: underline;
+	}
+	a{
+		target="_blank";
+		font-family:Verdana;
+	}
+	.multumiri{
+	text-decoration: overline; 
+	text-align:right
+	}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: lightblue;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+#myBtn:hover {
+  background-color: #555;
+}
+	
+	p.detalii{
+		font-family: Lucida Sans Unicode;
+		font-size: 17px;
+		text-indent: 50px;
+		text-align: justify;
+		text-align: center;
+		padding-top: 160px;
+		padding-right: 80px;
+		padding-bottom: 50px;
+		padding-left: 80px;
+}
+
+	
+</style>
+</head>
+
+<body style="height:1500px">
+
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" title="nume">Inversa unei matrice</a>
+    </div>
+    <ul class="nav navbar-nav">
+	  <li><a title="proiect" href='index.html'>	Acasă	</a></li>
+	  <li><a title="aplicatii" href='info.html'>	Teorie	</a></li>
+	  
+      <li><a title="cod" href='paginacod.php'>		Aplicație 	</a></li>
+      <li><a title="sugestii" href='descriere.html'>	Descriere	</a></li>
+      <li><a title="sugestii" href='paginasugestii.html'>	Alte idei/sugestii	</a></li>
+      <li><a title="autor" href='paginaautor.html'>	Despre autor	</a></li>
+	  <li class="active"><a title="bibliografie" href='paginabibliografie.html'>	Bibliografie	</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div  id="pozameniu">
+<br><br><br><br><br>
+
+  <h1 style="font-size:50px; text-align: center; color: white; font-family:fantasy;">INVERSAREA UNEI MATRICE</h1>
+	
+<br><br><br><br><br><br>
+</div>
+  
+ <div class="row">
+  <div class="container"  style="margin-top:50px">
+  
+  <h3>Site-uri și alte locuri de unde m-am inspirat: </h3>
+  <p>Pentru a realiza conexiunea dintre  paginile siteului:</p>
+  <ul>
+  <li><a href="https://www.w3schools.com/html/html_links.asp" >https://www.w3schools.com/html/html_links.asp</a></li>
+  </ul>
+  <p> Pentru a adauga pozele de pe site</p>
+  <ul>
+  <li><a href="https://www.w3schools.com/html/html_images.asp" >https://www.w3schools.com/html/html_images.asp</a></li>
+  </ul>
+  <p> Pentru stilizarea scrisului</p>
+  <ul>
+  <li><a href="https://www.w3schools.com/html/html_styles.asp" >https://www.w3schools.com/html/html_styles.asp</a></li>
+  <li><a href="https://www.w3schools.com/css/css_text.asp">https://www.w3schools.com/css/css_text.asp</a></li>
+  </ul>
+  <p>Pentru a realiza bara de meniu</p>
+  <ul>
+  <li><a href="https://www.w3schools.com/bootstrap/bootstrap_navbar.asp" >https://www.w3schools.com/bootstrap/bootstrap_navbar.asp</a></li>
+  </ul>
+  <p>Pentru a lista lucruri</p>
+  <ul>
+  <li><a href="https://www.w3schools.com/html/html_lists.asp">https://www.w3schools.com/html/html_lists.asp</a></li>
+  </ul>
+  <p>Pentru a realiza pagina "alte idei/sugestii"</p>
+  <ul>
+  <li><a href="https://www.w3schools.com/howto/howto_css_responsive_form.asp">https://www.w3schools.com/howto/howto_css_responsive_form.asp</a></li>
+  </ul>
+  <p>Pentru a realiza butonul ce duce sus</p>
+  <ul>
+  <li> <a href=" https://www.w3schools.com/howto/howto_js_scroll_to_top.asp">https://www.w3schools.com/howto/howto_js_scroll_to_top.asp</a></li>
+  </ul>
+    <p>Pentru teoria matrice</p>
+  <ul>
+  <li> <a href="https://liceunet.ro/ghid-matrice/inversa">https://liceunet.ro/ghid-matrice/inversa</a></li>
+  </ul>
+  <p>Pentru simboluri</p>
+  <ul>
+  <li> <a href="http://xahlee.info/comp/unicode_math_font.html">http://xahlee.info/comp/unicode_math_font.html</a></li>
+  <li> <a href="https://www.w3schools.com/html/html_symbols.asp ">https://www.w3schools.com/html/html_symbols.asp </a></li>
+  <li> <a href="https://www.toptal.com/designers/htmlarrows/arrows/ ">https://www.toptal.com/designers/htmlarrows/arrows/</a></li>
+  </ul>
+   <p>Pentru utilitatea unei  matrice</p>
+  <ul>
+  <li> <a href="https://math.stackexchange.com/questions/1399407/why-we-need-invertible-matrices-matrici ">
+  https://math.stackexchange.com/questions/1399407/why-we-need-invertible-matrices-matrici</a></li>
+  <li> <a href="https://www.quora.com/Why-do-we-need-to-find-inverse-of-a-matrix">https://www.quora.com/Why-do-we-need-to
+  -find-inverse-of-a-matrix</a></li>
+ </ul>
+ <p>Pentru pozele cu matrice, adjuncta, inversă </p>
+  <ul>
+  <li> <a href="http://www.e-formule.ro/wp-content/uploads/adjuncta-matricei.htm  ">http://www.e-formule.ro/wp-content/uploads/adjuncta-matricei.htm  </a></li>
+ <li> <a href= "https://ncalculators.com/matrix/4x4-inverse-matrix-calculator.htm ">https://ncalculators.com/matrix/4x4-inverse-matrix-calculator.htm  </a></li>
+  </ul>
+
+
+
+
+http://www.sosmath.com/matrix/coding/coding.html mesaje ecodate	
+http://www.sosmath.com/matrix/matinv/matinv.html
+<br><br>
+	
+  
+  </div>
+</div> 
+  
+
+ <div class="row">
+  <div class="col-lg-12" style="background-color:black;">
+  
+  <h5 style="font-size:10px; text-align: center; color: white; ">Acest proiect a fost realizat sub îndrumarea profesorului Alin Burța-C.N. ,,B.P. Hasdeu"</h5>
+  
+  </div>
+</div> 
+  
+ 
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+
+</div>
+
+</body>
+</html>
+

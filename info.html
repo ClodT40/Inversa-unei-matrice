@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <title>Inversarea unei matrice</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  
+
+
+	#pozameniu{
+
+background-image: url("img/pozabara.jpg");
+  background-repeat: repeat-x;
+}
+	p{
+	font-family:Verdana;
+	}
+	h3{
+		font-family:Verdana;
+		align:center;
+		color:lightblue;
+	}
+	a:hover {
+		color: purple;
+		background-color: transparent;
+		text-decoration: underline;
+	}
+	a{
+		target="_blank";
+		font-family:Verdana;
+	}
+	.multumiri{
+	text-decoration: overline; 
+	text-align:right
+	}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: lightblue;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+#myBtn:hover {
+  background-color: #555;
+}
+	
+	p.detalii{
+		font-family: Lucida Sans Unicode;
+		font-size: 17px;
+		text-indent: 50px;
+		text-align: justify;
+		text-align: center;
+		padding-top: 160px;
+		padding-right: 80px;
+		padding-bottom: 50px;
+		padding-left: 80px;
+}
+
+	
+</style>
+</head>
+
+<body style="height:1500px">
+
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" title="nume">Inversa unei matrice</a>
+    </div>
+    <ul class="nav navbar-nav">
+	   <li><a title="proiect" href='index.html'>	Acasă	</a></li>
+	  <li class="active"><a href="info.html" title="informatii" >	Teorie	</a></li>
+	
+      <li><a title="cod" href='paginacod.php'>		Aplicație	</a></li>
+      <li><a title="sugestii" href='descriere.html'>	Descriere	</a></li>
+      <li><a title="sugestii" href='paginasugestii.html'>	Alte idei/sugestii	</a></li>
+      <li><a title="autor" href='paginaautor.html'>	Despre autor	</a></li>
+	  <li><a title="bibliografie" href='paginabibliografie.html'>	Bibliografie	</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div  id="pozameniu">
+<br><br><br><br><br>
+
+  <h1 style="font-size:50px; text-align: center; color: white; font-family:fantasy;">INVERSAREA UNEI MATRICE</h1>
+	
+<br><br><br><br><br><br>
+</div>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Sus</button>
+  
+<div class="container" style="margin-top:50px">
+
+
+  <h2>Considerații teoretice </h2>
+  <p>
+  Fie  A &#8712; M<sub>n</sub>( &#8450 ),n &#8712; &#8469;<sup>*</sup>; o matrice pătratică de ordinul n și I<sub>n</sub>
+  matricea unitate de ordinul n
+  </p>
+  
+  <h3>Matrice inversabilă și inversa unei matrice</h3>
+  
+  <p>
+  
+  Matricea A este matrice inversabilă dacă există o matrice B&#8712; M<sub>n</sub> astfel încât să aibă loc relația: <br>
+  A&#215;B=B&#215;A=I<sub>n</sub><br><br>
+  Matricea B introdusă în definiția de mai sus se numește inversa matricei A și se notează B=A<sup>-1</sup>.<br>
+  A&#215;A<sup>-1</sup>=A<sup>-1</sup>&#215;A=I<sub>n</sub><br><BR>
+  Matricea A este inversabilă dacă și numai dacă det A&#8800;0.<br><br>
+  
+  </p>
+  
+  <h4>Exemplu:</h4>
+  
+ <p> 
+ Se dă matricea <img src="img/1.jpg"> . Să se verifice dacă matricea <img src="img/2.jpg"> este inversa matricei A.<br><br>
+ Pentru a verifica dacă matricea B este inversa matricei A, verificăm relația: <br><br>
+ A&#215;B=B&#215;A=I<sub>3</sub> (I<sub>3</sub> este matrice unitate de ordinul 3)<br> <br>
+ Calculăm A&#215;B: <br><br>
+ <img src="img/3.jpg"><br><br>
+ &#8658; A&#215;B=B&#215;A=I<sub>3</sub> <br><br>
+ &#8658; B=A<sup>-1</sup>.
+
+</p>
+
+ <h3>Etapele de determinare a inversei unei matrice pătratice</h3><br><br>
+ 
+ <p>
+ 
+ Vom trata problema determinării inversei unei matrice pătratice de ordinul 2 și respectiv de ordinul 3.<br><br>
+ Pentru n=2.<br><br>
+ Fie matricea  <img src="img/4.jpg"><br><br>
+ 1.Calculăm det A cu formula:<br><br><img src="img/5.jpg"><br><br>
+ Dacă  det A=0, adică <img src="img/6.jpg">, atunci matricea A nu este inversabilă.<br><br>
+ Dacă  det A&#8800;0 , atunci matricea A este inversabilă și se continuă procedeul de determinare a inversei acesteia.<br><br>
+ 2.Scriem transpusa matricei A.<br><br>
+ <img src="img/7.jpg"><br><br> 3.Construim matricea adjunctă a matricei A, notată A<sup>*</sup>.<img src="img/8.jpg">,unde<br><img src="img/9.jpg"><br><br>
+ 4.Determinăm inversa matricei A, folosind următoarea formulă:<br><br>
+ <img src="img/10.jpg"><br><br>
+ Atunci când calculăm elementele matricei adjunctă A<sup>*</sup>,
+ vom înmulții pe (-1)<sup>i+j</sup> (în funcție de poziția elementului pe care îl calculăm) 
+ cu determinantul de ordinul 1 care rămâne după ce "tăiem" linia și coloana elementului curent din matricea transpusă <sup>t</sup>A.<br><br>
+ 
+ </P>
+ 
+ <h4>Exemplu:</h4>
+ <p>
+ 
+ i. Fie matricea pătratică de ordinul 3:   <img src="img/11.jpg">.<br>
+ Calculăm inversa matricei A folosind procedeul descris anterior.<br> 
+ Mai întâi, verificăm dacă matricea este inversabilă, calculându-i determinantul.<br>
+ <img src="img/12.jpg"><br>
+ Cum det A=0, rezultă că matricea A nu este inversabilă, deci nu ii putem afla inversa.<br>
+ ii. Fie matricea pătratică de ordinul 3: <img src="img/13.jpg"> <br><br>
+ Calculăm inversa matricei A  folosind procedeul descris mai sus.<br><br>
+ 1.Calculăm det A.<br><br>
+ <img src="img/14.jpg"><br><br>
+ <img src="img/15.jpg"><br><br>
+ Rezultă că  A  este inversabilă.<br><br><br>
+ 2.Scriem transpusa matricei A.<br><br>
+ <img src="img/16.jpg"><br><br>
+ 3.Construim matricea adjunctă A<sup>*</sup>.<br><br>
+ <img src="img/17.jpg">,unde:<br><br>
+ <img src="img/18.jpg"><br><br>
+ <img src="img/19.jpg"><br><br>
+ <img src="img/20.jpg"><br><br>
+ <img src="img/21.jpg"><br><br>
+ <img src="img/22.jpg"><br><br>
+ <img src="img/23.jpg"><br><br>
+ <img src="img/24.jpg"><br><br>
+ <img src="img/25.jpg"><br><br>
+ <img src="img/26.jpg"><br><br>
+ <img src="img/27.jpg"><br><br>
+ 3.Determinăm inversa matricei A, folosind formula:<br><br>
+<img src="img/28.jpg"><br><br>
+<img src="img/29.jpg"><br><br>
+<img src="img/30.jpg"><br><br>
+
+</p>
+</div>
+
+<div class="row">
+  <div class="col-lg-12" style="background-color:black;">
+  
+  <h5 style="font-size:10px; text-align: center; color: white; ">Acest proiect a fost realizat sub îndrumarea profesorului Alin Burța-C.N. ,,B.P. Hasdeu"</h5>
+  
+  </div>
+</div> 
+ 
+ 
+  
+  
+ 
+  
+  
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+
+</div>
+
+
+
+
+
+</body>
+</html>
+
